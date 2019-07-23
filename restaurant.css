@@ -1,0 +1,22 @@
+h1 {
+  text-align:center;
+}
+
+.restauruants {
+  display:flex;
+}
+
+.panera {
+  height: 200px;
+  width: 300px;
+}
+
+.mcdonalds {
+  height: 200px;
+  width: 300px;
+}
+
+.chipotle {
+  height: 200px;
+  width: 300px;
+}
