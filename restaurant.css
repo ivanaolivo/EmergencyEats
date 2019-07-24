@@ -2,8 +2,9 @@ h1 {
   text-align:center;
 }
 
-.restauruants {
+.restaurants {
   display:flex;
+  flex-wrap:wrap;
 }
 
 .panera {
@@ -14,9 +15,11 @@ h1 {
 .mcdonalds {
   height: 200px;
   width: 300px;
+  padding-left: 30px;
 }
 
 .chipotle {
   height: 200px;
   width: 300px;
+  padding-top: 20px;
 }
