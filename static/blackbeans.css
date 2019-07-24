@@ -35,28 +35,6 @@ li:last-child {
   color: white;
 }
 
-.item1 {
-  display:flex;
-}
-
-.queso {
-  height: 200px;
-  width: 300px;
-}
-
-.item2 {
-  display:flex;
-}
-
-.pintobeans {
-  height: 200px;
-  width: 300px;
-}
-
-.item3 {
-  display:flex;
-}
-
 .blackbeans {
   height: 200px;
   width: 300px;
