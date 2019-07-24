@@ -11,6 +11,7 @@ ul {
 li {
   border-right: 1px solid black;
   float: left;
+  list-style:none;
 }
 
 li a {
