@@ -35,29 +35,7 @@ li:last-child {
   color: white;
 }
 
-.item1 {
-  display:flex;
-}
-
-.oatmeal {
-  height: 200px;
-  width: 300px;
-}
-
-.item2 {
-  display:flex;
-}
-
 .bowl {
-  height: 200px;
-  width: 300px;
-}
-
-.item3 {
-  display:flex;
-}
-
-.noodles {
   height: 200px;
   width: 300px;
 }

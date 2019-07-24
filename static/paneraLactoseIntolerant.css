@@ -39,25 +39,25 @@ li:last-child {
   display:flex;
 }
 
-.oatmeal {
+.salad {
   height: 200px;
-  width: 300px;
+  width: 270px;
 }
 
 .item2 {
   display:flex;
 }
 
-.bowl {
+.blt {
   height: 200px;
-  width: 300px;
+  width: 270px;
 }
 
 .item3 {
   display:flex;
 }
 
-.noodles {
+.chili {
   height: 200px;
-  width: 300px;
+  width: 270px;
 }
