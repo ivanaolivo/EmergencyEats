@@ -35,29 +35,7 @@ li:last-child {
   color: white;
 }
 
-.item1 {
-  display:flex;
-}
-
-.ciabatta {
+.queso {
   height: 200px;
-  width: 270px;
-}
-
-.item2 {
-  display:flex;
-}
-
-.soup {
-  height: 200px;
-  width: 270px;
-}
-
-.item3 {
-  display:flex;
-}
-
-.salad2 {
-  height: 200px;
-  width: 270px;
+  width: 300px;
 }
