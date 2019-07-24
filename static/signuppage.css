@@ -1,5 +1,17 @@
+.boxed {
+  display: inline-block;
+}
+
 h1
 {
   font-family: sans-serif;
   text-align: center;
+}
+
+.things {
+  text-align: center
+}
+
+body {
+  background-image: url("https://foodrevolution.org/wp-content/uploads/2018/03/blog-featured_healthy_foods-20180306.jpg");
 }
