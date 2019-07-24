@@ -1,6 +1,19 @@
 body {
-  background-image: url("https://veganboyfriend.com/wp-content/uploads/2018/07/Screen-Shot-2018-07-30-at-1.55.42-PM.png");
-  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.topPage{
+  flex-basis: 50%;
+}
+
+.imTheDamnImage{
+  flex-basis: 50%;
+}
+
+.imTheDamnImage img{
+  width: 100%;
+  height: 100%;
 }
 
 h1 {
