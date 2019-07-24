@@ -1,0 +1,50 @@
+h1
+{
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h2
+{
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h3
+{
+  font-family: sans-serif;
+  text-align: center;
+}
+
+div
+{
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h4
+{
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row {
+
+
+  -webkit-column-rule: 4px double #ff00ff; /* Chrome, Safari, Opera */
+  -moz-column-rule: 4px double #ff00ff; /* Firefox */
+  column-rule: 4px double #ff00ff;
+}

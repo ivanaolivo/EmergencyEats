@@ -1,0 +1,63 @@
+ul {
+  position: sticky;
+  border: 1px solid #e7e7e7;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #;
+}
+
+li {
+  border-right: 1px solid black;
+  float: left;
+  list-style:none;
+}
+
+li a {
+  display: block;
+  color: pink;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.item1 {
+  display:flex;
+}
+
+.queso {
+  height: 200px;
+  width: 300px;
+}
+
+.item2 {
+  display:flex;
+}
+
+.pbeans {
+  height: 200px;
+  width: 300px;
+}
+
+.item3 {
+  display:flex;
+}
+
+.bbeans {
+  height: 200px;
+  width: 300px;
+}
