@@ -27,8 +27,12 @@ li a {
   text-decoration: none;
 }
 
+.nav:hover {
+  background-color: #e6dcdd;
+}
+
 li a:hover {
-  background-color: #111;
+  background-color: #c22e21;
 }
 
 li:last-child {
@@ -65,4 +69,22 @@ li:last-child {
 .sofritas {
   height: 200px;
   width: 300px;
+}
+
+h1
+{
+  font-family: serif;
+  color: #4d0e13;
+}
+
+h2
+{
+  font-family: serif;
+  color: #4d0e13;
+}
+
+h3
+{
+  font-family: serif;
+  color: #4d0e13;
 }
