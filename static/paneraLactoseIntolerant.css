@@ -1,3 +1,7 @@
+.body {
+  background-color: #e6cddd;
+}
+
 ul {
   position: sticky;
   border: 1px solid #e7e7e7;

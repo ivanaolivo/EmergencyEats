@@ -7,7 +7,7 @@ body {
   flex-basis: 50%;
 }
 
-.imTheDamnImage{
+.imtheimage{
   flex-basis: 50%;
 }
 
@@ -16,7 +16,7 @@ body {
   height: 100%;
 }
 
-h1 {
+h1 , .btn{
   text-align: center;
   font-family: sans-serif;
 }
@@ -55,4 +55,17 @@ li:last-child {
 .active {
   background-color: white;
   color: white;
+}
+
+.btn {
+  background-color: maroon;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-family: serif;
+  justify-content: center;
+  color: #e6dcdd;
+}
+
+.btn:hover {
+  background: red;
 }
