@@ -70,7 +70,7 @@ li:last-child {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: #c22e21;
+  background-color: rgba(194,46,33,.9);
   color: #4d0e13;
   font-family: serif;
   font-size: 50px;
@@ -102,7 +102,7 @@ li:last-child {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: #c22e21;
+  background-color: rgba(194,46,33,.9);
   color: #4d0e13;
   font-family: serif;
   font-size: 50px;
@@ -134,7 +134,7 @@ li:last-child {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: #c22e21;
+  background-color: rgba(194,46,33,.9);
   color: #4d0e13;
   font-family: serif;
   font-size: 50px;
@@ -146,6 +146,6 @@ li:last-child {
   width: 400px;
 }
 
-.container3 {
+.container3 .btn:hover{
   background-color: #e6dcdd;
 }
