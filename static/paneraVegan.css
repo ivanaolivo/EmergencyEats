@@ -34,8 +34,12 @@ li:last-child {
   border-right: none;
 }
 
-h1 {
+h1, h2, h3 {
   color: #4d0e13
+}
+
+.words:hover {
+  background-color: #e6dcdd;
 }
 
 .active {

@@ -1,5 +1,5 @@
-.body {
-  background-color: #e6cddd;
+body {
+  background-color: #e6dcdd;
 }
 
 ul {
@@ -9,7 +9,11 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #;
+  background-color: #c22e21;
+}
+
+.words:hover {
+  background-color: #e6dcdd;
 }
 
 li {
@@ -20,18 +24,22 @@ li {
 
 li a {
   display: block;
-  color: pink;
+  color: #4d0e13;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: #c22e21;
 }
 
 li:last-child {
   border-right: none;
+}
+
+h1, h2, h3 {
+  color: #4d0e13;
 }
 
 .active {
