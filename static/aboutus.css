@@ -27,7 +27,7 @@ li a {
 }
 
 li a:hover {
-  background-color: pink;
+  background-color: #e6dcdd;
 }
 
 li:last-child {
@@ -79,7 +79,6 @@ h4
   float: left;
   width: 32.5%;
   border: 2px solid #000000;
-
 }
 
 /* Clear floats after the columns */
