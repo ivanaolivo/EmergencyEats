@@ -9,7 +9,7 @@ the_jinja_env = jinja2.Environment(
     autoescape=True)
 
 # FoodItem initialization
-hamburger = FoodItem(name="Hamburger", restaurant="McDonalds", dietaryRest=[])
+hamburger = FoodItem(name="Hamburger", restaurant="McDonalds", dietaryRest=["lactose",])
 hamburger_key = hamburger.put()
 
 # Restaurant initialization
