@@ -1,9 +1,5 @@
-h1 {
-  text-align:center;
-}
-
 .restaurants {
-  display:flex;
+    display:flex;
   flex-wrap: wrap;
 }
 
