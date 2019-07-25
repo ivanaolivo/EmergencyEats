@@ -1,3 +1,8 @@
+body
+{
+  background-color: #e6dcdd;
+}
+
 ul {
   position: sticky;
   border: 1px solid #e7e7e7;
@@ -5,7 +10,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #;
+  background-color: #c22e21;
 }
 
 li {
@@ -16,14 +21,22 @@ li {
 
 li a {
   display: block;
-  color: pink;
+  color: #4d0e13;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
+h1, h2, h3 {
+  color: #4d0e13;
+}
+
+.nav:hover {
+  background-color: #e6dcdd;
+}
+
 li a:hover {
-  background-color: #111;
+  background-color: #c22e21;
 }
 
 li:last-child {
@@ -49,8 +62,8 @@ li:last-child {
 }
 
 .mcchicken {
-  height: 220px;
-  width: 270px;
+  height: 260px;
+  width: 300px;
 }
 
 .item3 {
