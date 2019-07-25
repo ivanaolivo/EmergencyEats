@@ -28,13 +28,20 @@ li a {
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: #c22e21;
 }
 
 li:last-child {
   border-right: none;
 }
 
+h1, h2, h3 {
+  color: #4d0e13;
+}
+
+.nav:hover {
+  background-color: #e6dcdd;
+}
 .active {
   background-color: #4CAF50;
   color: white;
@@ -45,8 +52,8 @@ li:last-child {
 }
 
 .parfait {
-  height: 220px;
-  width: 270px;
+  height: 270px;
+  width: 300px;
 }
 
 .item2 {

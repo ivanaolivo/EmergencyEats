@@ -27,12 +27,19 @@ li a {
   text-decoration: none;
 }
 
+.nav:hover {
+  background-color: #e6dcdd;
+}
 li a:hover {
-  background-color: #111;
+  background-color: #c22e21;
 }
 
 li:last-child {
   border-right: none;
+}
+
+h1, h2, h3 {
+  color: #4d0e13;
 }
 
 .active {

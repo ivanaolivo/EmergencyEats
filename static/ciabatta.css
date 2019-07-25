@@ -28,11 +28,15 @@ li a {
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: #e6dcdd;
 }
 
 li:last-child {
   border-right: none;
+}
+
+h1, h2, h3 {
+  color: #4d0e13;
 }
 
 .active {

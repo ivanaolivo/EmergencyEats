@@ -27,8 +27,16 @@ li a {
   text-decoration: none;
 }
 
+h1, h2, h3 {
+  color: #4d0e13;
+}
+
+.nav:hover {
+  background-color: #e6dcdd;
+}
+
 li a:hover {
-  background-color: #111;
+  background-color: #c22e21;
 }
 
 li:last-child {
@@ -54,8 +62,8 @@ li:last-child {
 }
 
 .mcchicken {
-  height: 220px;
-  width: 270px;
+  height: 260px;
+  width: 300px;
 }
 
 .item3 {
