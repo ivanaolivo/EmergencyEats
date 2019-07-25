@@ -1,5 +1,10 @@
+body
+{
+  background-color: #e6dcdd;
+}
+
 .restaurants {
-    display:flex;
+  display: flex;
   flex-wrap: wrap;
 }
 
@@ -23,7 +28,6 @@
 .topPage{
   flex-basis: 50%;
 }
-
 
 h1 {
   text-align: center;
