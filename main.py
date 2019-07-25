@@ -8,6 +8,16 @@ the_jinja_env = jinja2.Environment(
     extensions=['jinja2.ext.autoescape'],
     autoescape=True)
 
+# FoodItem initialization
+hamburger = FoodItem(name="Hamburger", restaurant="McDonalds", dietaryRest=[])
+hamburger_key = hamburger.put()
+
+# Restaurant initialization
+mcdonalds = Restaurant(name="McDonalds", picture="https://vignette.wikia.nocookie.net/ronaldmcdonald/images/b/b5/Mcdonalds-logo-current-1024x750.png/revision/latest/scale-to-width-down/180?cb=20180730081148",
+                       foodItems=[hamburger_key])
+mcdonalds.put()
+
+
 class LoginHandler(webapp2.RequestHandler):
     def get(self):
         login_template = the_jinja_env.get_template('templates/loginpage.html')
