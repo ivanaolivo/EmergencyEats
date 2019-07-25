@@ -20,7 +20,11 @@ li {
 
 li a {
   display: block;
+<<<<<<< HEAD
   color: #4d0e21;
+=======
+  color: #4d0e13;
+>>>>>>> e29349bffc5382e4fb89ff13a8759eb17ed577ef
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;

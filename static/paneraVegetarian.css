@@ -10,10 +10,13 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #c22e21;
+<<<<<<< HEAD
 }
 
 .words:hover {
   background-color: #e6dcdd;
+=======
+>>>>>>> e29349bffc5382e4fb89ff13a8759eb17ed577ef
 }
 
 li {
