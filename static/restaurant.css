@@ -27,7 +27,7 @@
 
 h1 {
   text-align: center;
-  font-family: sans-serif;
+  font-family: serif;
 }
 
 ul {
@@ -37,7 +37,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #bd3f39;
+  background-color: #c22e21;
 }
 
 li {
@@ -47,7 +47,7 @@ li {
 
 li a {
   display: block;
-  color: black;
+  color: #4d0e13;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
