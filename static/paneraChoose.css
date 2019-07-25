@@ -1,6 +1,7 @@
 h1 {
   text-align: center;
   color: #4d0e13;
+  font-size: 50px;
 }
 
 div {
@@ -11,12 +12,6 @@ body {
   background-color: #e6dcdd;
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
 
 ul {
   position: sticky;
@@ -69,8 +64,6 @@ li:last-child {
   background-size: cover;
 }
 
-
-/* Style the button and place it in the middle of the container/image */
 .container .btn {
   position: absolute;
   top: 50%;
@@ -79,23 +72,80 @@ li:last-child {
   -ms-transform: translate(-50%, -50%);
   background-color: #c22e21;
   color: #4d0e13;
-  font-size: 16px;
+  font-family: serif;
+  font-size: 50px;
   padding: 12px 24px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  height: 200px;
+  width: 400px;
 }
 
 .container .btn:hover {
   background-color: #e6dcdd;
 }
 
-.background {
-box-sizing: border-box;
-width: 100%;
-height: 150px;
-padding: 3px;
-background-image: url(/pix/samples/bg1.gif);
-border: 1px solid black;
-background-size: 100% 100%;
+.container2 {
+  float: center;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-color: green;
+  background-image: url("https://vegetarian-nation.com/wp-content/uploads/2018/04/vegetarian-diet-heart-health-AS178373384.jpeg");
+  background-size: cover;
+}
+
+.container2 .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #c22e21;
+  color: #4d0e13;
+  font-family: serif;
+  font-size: 50px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 200px;
+  width: 400px;
+}
+
+.container2 .btn:hover {
+  background-color: #e6dcdd;
+}
+
+.container3 {
+  float: center;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-image: url("https://allaboutkiids.com/wp-content/uploads/2018/03/Lactose-intolerance-coastal-urgent-care-louisiana.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.container3 .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #c22e21;
+  color: #4d0e13;
+  font-family: serif;
+  font-size: 50px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 200px;
+  width: 400px;
+}
+
+.container3 {
+  background-color: #e6dcdd;
 }
