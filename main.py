@@ -30,7 +30,7 @@ class PaneraChooseHandler(webapp2.RequestHandler):
         paneraChoose_template = the_jinja_env.get_template('templates/paneraChoose.html')
         self.response.write(paneraChoose_template.render())
 
-class SeedDatatHandler(webapp2.RequestHandler):
+class SeedDataHandler(webapp2.RequestHandler):
     def get(self):
         # FoodItem initialization
 
@@ -220,6 +220,6 @@ class SeedDatatHandler(webapp2.RequestHandler):
 app = webapp2.WSGIApplication([
     ('/', LoginHandler),
     ('/restaurants', RestaurantHandler),
-    ('/seeddata', SeedDatatHandler),
+    ('/seed-data', SeedDataHandler),
     ('/paneraChoose', PaneraChooseHandler),
 ], debug=True)
