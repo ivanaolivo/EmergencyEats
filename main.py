@@ -202,6 +202,8 @@ class SeedDataHandler(webapp2.RequestHandler):
         ingredients="Bay leaf, brown rice, cilantro, lemon juice, lime juice, rice bran oil, salt, water",
         nutrition="Cal=210, Total Fat=6g, Sodium=195mg, Total Carb=36g, Protein=4g, Sugar=0g")
 
+        rice_key = rice.put()
+
         #ChickFilA Vegan
 
         salad4 = FoodItem(name="Grilled market salad (no chicken, no cheese)", dietaryRest=["Vegan"], picture="https://www.cfacdn.com/img/order/menu/Online/Salads%26wraps/marketSalad_noMeat_PDP.png",
@@ -274,8 +276,8 @@ class SeedDataHandler(webapp2.RequestHandler):
         panera.put()
         self.response.write("data has been seeded")
 
-        chickfila = Restaurant(name="chickfila", picture="https://s3-media4.fl.yelpcdn.com/bphoto/E7oOqJWxZ9Z3gNhD97KQXw/o.jpg",
-                               veganItems=[hashbrowns_key, salad4_key, superFruit_key], vegetarianItems=[salad5_key, biscuit_key, parfait2_key], lactoseItems=[nuggets2_key, muffin_key, sandwich_key])
+        chickfila = Restaurant(name="Chickfila", picture="https://s3-media4.fl.yelpcdn.com/bphoto/E7oOqJWxZ9Z3gNhD97KQXw/o.jpg",
+                               veganItems=[hashbrowns_key, salad4_key, superFood_key], vegetarianItems=[salad5_key, biscuit_key, parfait2_key], lactoseItems=[nuggets2_key, muffin_key, sandwich_key])
         chickfila.put()
 
 class AboutUsHandler(webapp2.RequestHandler):
