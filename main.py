@@ -65,7 +65,7 @@ class SeedDataHandler(webapp2.RequestHandler):
         mcmuffin_key = mcmuffin.put()
 
         mcwrap = FoodItem(name="Veggie McWrap", dietaryRest=["Vegetarian"], picture="https://a57.foxnews.com/a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2018/09/640/320/1862/1048/5b4abf1c-EggMcMuffin.jpg?ve=1&tl=1?ve=1&tl=1",
-                        ingredients="Southwest Vegetable Blend(Roasted Corn, Black Beans, Roasted Tomato, Poblano Pepper, Lime Juice (Water, Lime Juice Concentrate, Lime Oil), Cilantro), Flour tortilla(Enriched Flour (Bleached Wheat Flour, Malted Barley Flour, Niacin, Reduced Iron, Thiamine Mononitrate, Riboflavin, Folic Acid), Water, Shortening (Intereserified Soybean Oil, Soybean Oil, Hydrogenated Soybean Oil, Hydrogenated Cottonseed Oil), Contains 2% or Less: Sugar, Leavening (Baking Soda, Corn Starch, Sodium Aluminum Sulfate, Calcium Sulfate, Monocalcium Phosphate), Salt, Mono-diglycerides, Vital Wheat Gluten, Dough Conditioner (Sodium Metabisulfite, Corn Starch, Microcrystalline Cellulose, Dicalcium Phosphate)), Salad blend(Romaine Lettuce, Baby Spinach, Carrots, Baby Kale, Lollo Rossa Lettuce, Red Leaf Lettuce, Red Oak Lettuce, Red Tango Lettuce, Red Romaine Lettuce, Red Butter Lettuce), Cilantro Lime Glaze(Water, Corn Syrup Solids, High Fructose Corn Syrup, Sugar, Distilled Vinegar, Olive Oil, Soybean Oil, Freeze-Dried Orange Juice Concentrate, Contains 2% or Less: Salt, Freeze-Dried Lime Juice Concentrate, Cilantro, Xanthan Gum, Preservatives (Sodium Benzoate and Potassium Sorbate), Garlic Powder, Spice, Propylene Glycol Alginate, Onion Powder, Citric Acid), Shredded Cheddar/Jack Cheese(Cheddar Cheese (Pasteurized Milk, Cheese Culture, Salt, Enzymes, Annatto [Color]), Monterey Jack Cheese (Pasteurized Milk, Cheese Culture, Salt, Enzymes), Potato Starch, Corn Starch, Dextrose, Powdered Cellulose (Prevent Caking), Calcium Sulfate, Natamycin (Natural Mold Inhibitor), Enzyme), Roma Tomato, Buttermilk Ranch Sauce(Soybean Oil, Cultured Buttermilk, Water, Sour Cream (Milk, Cultured Cream, Modified Food Starch, Guar Gum, Sodium Phosphates, Carob Bean Gum, Sodium Citrate, Calcium Sulfate, Carrageenan, Dextrose, Potassium Sorbate [Preservative], Citric Acid, Gelatin, Mono- and Diglycerides), Egg Yolks, Contains 2% or Less: Distilled Vinegar, Maltodextrin, Salt, Dextrose, Modified Food Starch, Soy Sauce (Soybeans, Wheat, Salt), Dried Onion, Garlic Powder, Lactic Acid, Natural Flavors, Shallots, Preservatives (Sodium Benzoate, Potassium Sorbate, Calcium Disodium EDTA), Xanthan Gum, Spice, Phosphoric Acid, Sodium Acid Sulfate, Propylene Glycol Alginate, Autolyzed Yeast Extract)",
+                        ingredients="Southwest Vegetable Blend(Roasted Corn, Black Beans, Roasted Tomato, Poblano Pepper, Lime Juice (Water, Lime Juice Concentrate, Lime Oil), Cilantro), Flour tortilla(Enriched Flour (Bleached Wheat Flour, Malted Barley Flour, Niacin, Reduced Iron, Thiamine Mononitrate, Riboflavin, Folic Acid), Water, Shortening (Intereserified Soybean Oil, Soybean Oil, Hydrogenated Soybean Oil, Hydrogenated Cottonseed Oil), Contains 2% or Less: Sugar, Leavening (Baking Soda, Corn Starch, Sodium Aluminum Sulfate, Calcium Sulfate, Monocalcium Phosphate), Salt, Mono-diglycerides, Vital Wheat Gluten, Dough Conditioner (Sodium Metabisulfite, Corn Starch, Microcrystalline Cellulose, Dicalcium Phosphate)), Salad blend(Romaine Lettuce, Baby Spinach, Carrots, Baby Kale, Lollo Rossa Lettuce, Red Leaf Lettuce, Red Oak Lettuce, Red Tango Lettuce, Red Romaine Lettuce, Red Butter Lettuce), Cilantro Lime Glaze(Water, Corn Syrup Solids, High Fructose Corn Syrup, Sugar, Distilled Vinegar, Olive Oil, Soybean Oil, Freeze-Dried Orange Juice Concentrate, Contains 2% or Less: Salt, Freeze-Dried Lime Juice Concentrate, Cilantro, Xanthan Gum, Preservatives (Sodium Benzoate and Potassium Sorbate), Garlic Powder, Spice, Propylene Glycol Alginate, Onion Powder, Citric Acid), Shredded Cheddar/Jack Cheese(Cheddar Cheese (Pasteurized Milk, Cheese Culture, Salt, Enzymes",
                         nutrition="480 cal, 62g carbs, 19g fat, 15g protein, 870mg sodium")
 
         mcwrap_key = mcwrap.put()
@@ -96,13 +96,13 @@ class SeedDataHandler(webapp2.RequestHandler):
         oatmeal_key = oatmeal.put()
 
         bowl = FoodItem(name="Vegan Lentil Quinoa Bowl", dietaryRest=["Vegan"], picture="https://www.panerabread.com/content/dam/panerabread/menu/details/vegan-lentil-quinoa-broth-bowl.jpg",
-                        ingredients="Lentil Broth Bowl Blend (Citrus & Pepper Chicken (Boneless Skinless Chicken Breast Fillets With Rib Meat, Water, Seasoning [Lemon, Mangosteen, Natural Smoke Flavor], Sea Salt, Dehydrated Garlic, Dehydrated Onion, Sugar, Dry Lemon Peel, Spices, Dehydrated Rosemary, Dehydrated Basil, Citric Acid, Malic Acid And Paprika For Flavor, Vinegar, Rice Starch), Quinoa Sofrito Tomato Blend [Organic Quinoa (Water, Organic Golden Quinoa, Organic Red Quinoa, Sea Salt, Glucono Delta Lactone), Roasted Tomato Sofrito Blend (Tomatoes, Onion, Canola Oil, Extra Virgin Olive Oil, Dried Garlic, Vinegar, Salt, Sugar, Thyme)], Green Lentil Blend (Organic Green Lentil [May Contain Traces Of Wheat, Soy And Mustard], Water, Diced Tomatoes, Onion, Carrot, Celery, Canola Oil, Vegetable Base [Vegetables {Carrot, Celery, Onion}, Cane Sugar, Canola Oil, Salt, Dried Potato, Yeast Extract, Natural Flavor], Rice Starch, Sea Salt, Rasam Powder [Coriander, Chili Pepper, Red Pepper, Cumin, Fenugreek], Garlic, Sugar, Turmeric), Kale, Spinach, Organic Brown Rice (Water, Organic Brown Rice), Lemon Juice), Umami Broth (Water, Umami Broth Concentrate (Red Miso (Water, Soybeans, Rice, Salt, Alcohol), Hot Pepper Paste (Corn Syrup, Rice Flour, Red Pepper Paste [Red Pepper Powder, Water, Sea Salt, Garlic, Onion], Water, Sea Salt, Gelatinized Rice Flour, Soybean Paste [Water, Soybean, Fermented Soybean, Roasted Soybean Powder, Salt, Seed Malt {Contains Wheat}], Alcohol, Red Pepper Powder, Glutinous Rice, Seed Malt [Contains Wheat]), Soybean Oil, Worcestershire Sauce (Water, Vinegar, Molasses, Sugar, Salt, Tamarind [Natural Extract, Sugar Syrup, Tartaric Acid], Garlic, Natural Smoke Flavor, Spices, Natural Flavors, Onion), White Distilled Vinegar, Natural Flavor, Soy Sauce (Water, Soybeans, Rice, Salt), Tomato Paste, Vegetable Stock (Water, Cabbage, Onion, Bean Sprouts, Garlic, Ginger, Dried Kelp), Brown Sugar, Yeast Extract, Onion Powder, Sesame Oil, Guajillo Chili Powder, Garlic Powder, Spices, Turmeric Powder))",
+                        ingredients="Lentil Broth Bowl Blend (Citrus & Pepper Chicken (Boneless Skinless Chicken Breast Fillets With Rib Meat, Water, Seasoning [Lemon, Mangosteen, Natural Smoke Flavor], Sea Salt, Dehydrated Garlic, Dehydrated Onion, Sugar, Dry Lemon Peel, Spices, Dehydrated Rosemary, Dehydrated Basil, Citric Acid, Malic Acid And Paprika For Flavor, Vinegar, Rice Starch), Quinoa Sofrito Tomato Blend [Organic Quinoa (Water, Organic Golden Quinoa, Organic Red Quinoa, Sea Salt, Glucono Delta Lactone), Roasted Tomato Sofrito Blend (Tomatoes, Onion, Canola Oil, Extra Virgin Olive Oil, Dried Garlic, Vinegar, Salt, Sugar, Thyme)], Green Lentil Blend (Organic Green Lentil [May Contain Traces Of Wheat, Soy And Mustard], Water, Diced Tomatoes, Onion, Carrot, Celery, Canola Oil, Vegetable Base [Vegetables {Carrot, Celery, Onion}, Cane Sugar, Canola Oil, Salt, Dried Potato, Yeast Extract, Natural Flavor], Rice Starch, Sea Salt, Rasam Powder [Coriander, Chili Pepper, Red Pepper, Cumin, Fenugreek], Garlic, Sugar, Turmeric), Kale, Spinach, Organic Brown Rice (Water, Organic Brown Rice), Lemon Juice)",
                         nutrition="Cal=380, Total Fat=8g, Sodium=1040mg, Total Carb=45g, Protein= 32g, Sugar= 5g")
 
         bowl_key = bowl.put()
 
         noodles = FoodItem(name="Soba Noodle Broth Bowl with Edamame Blend", dietaryRest=["Vegan"], picture="https://www.panerabread.com/content/dam/panerabread/menu/details/soba-noodle-bowl-with-edamame.jpg",
-                            ingredients="Soba Noodle Broth Bowl Blend (Soba Buckwheat Noodles (Water, Enriched Wheat Flour [Wheat Flour, Niacin, Reduced Iron, Thiamine Mononitrate, Riboflavin, Folic Acid], Buckwheat Flour, Soybean Oil, Salt), Fire Roasted Edamame Blend (Edamame [Soy], Carrot, Red Bell Pepper, Oil [Canola And Olive Oil], Salt, Black Pepper), Napa Cabbage Blend (Napa Cabbage, Green Cabbage, Carrot, Radicchio), Spinach, Fire Roasted Mushroom And Sweet Onion Blend (Fire Roasted Brown & White Mushrooms, Fire Roasted Yellow Onions, Thyme, Canola And Olive Oil Blend, Tamari Soy Sauce [Water, Soybean, Salt, Wheat], Black Pepper, Sea Salt)), Umami Broth (Water, Umami Broth Concentrate (Red Miso (Water, Soybeans, Rice, Salt, Alcohol), Hot Pepper Paste (Corn Syrup, Rice Flour, Red Pepper Paste [Red Pepper Powder, Water, Sea Salt, Garlic, Onion], Water, Sea Salt, Gelatinized Rice Flour, Soybean Paste [Water, Soybean, Fermented Soybean, Roasted Soybean Powder, Salt, Seed Malt {Contains Wheat}], Alcohol, Red Pepper Powder, Glutinous Rice, Seed Malt [Contains Wheat]), Soybean Oil, Worcestershire Sauce (Water, Vinegar, Molasses, Sugar, Salt, Tamarind [Natural Extract, Sugar Syrup, Tartaric Acid], Garlic, Natural Smoke Flavor, Spices, Natural Flavors, Onion), White Distilled Vinegar, Natural Flavor, Soy Sauce (Water, Soybeans, Rice, Salt), Tomato Paste, Vegetable Stock (Water, Cabbage, Onion, Bean Sprouts, Garlic, Ginger, Dried Kelp), Brown Sugar, Yeast Extract, Onion Powder, Sesame Oil, Guajillo Chili Powder, Garlic Powder, Spices, Turmeric Powder)), Sesame Seeds, Cilantro",
+                            ingredients="Soba Noodle Broth Bowl Blend (Soba Buckwheat Noodles (Water, Enriched Wheat Flour [Wheat Flour, Niacin, Reduced Iron, Thiamine Mononitrate, Riboflavin, Folic Acid], Buckwheat Flour, Soybean Oil, Salt), Fire Roasted Edamame Blend (Edamame [Soy], Carrot, Red Bell Pepper, Oil [Canola And Olive Oil], Salt, Black Pepper), Napa Cabbage Blend (Napa Cabbage, Green Cabbage, Carrot, Radicchio), Spinach, Fire Roasted Mushroom And Sweet Onion Blend (Fire Roasted Brown & White Mushrooms, Fire Roasted Yellow Onions, Thyme, Canola And Olive Oil Blend, Tamari Soy Sauce [Water, Soybean, Salt, Wheat], Black Pepper, Sea Salt)), Umami Broth (Water, Umami Broth Concentrate (Red Miso (Water, Soybeans, Rice, Salt, Alcohol), Hot Pepper Paste (Corn Syrup, Rice Flour, Red Pepper Paste [Red Pepper Powder, Water, Sea Salt, Garlic, Onion], Water, Sea Salt, Gelatinized Rice Flour, Soybean Paste [Water, Soybean, Fermented Soybean, Roasted Soybean Powder, Salt, Seed Malt {Contains Wheat}], Alcohol, Red Pepper Powder, Glutinous Rice, Seed Malt [Contains Wheat]), Soybean Oil, Worcestershire Sauce",
                             nutrition="Cal=330, Total Fat=11g, Sodium=1030mg, Total Carb=46g, Protein= 12g, Sugar= 6g")
 
         noodles_key = noodles.put()
@@ -146,57 +146,57 @@ class SeedDataHandler(webapp2.RequestHandler):
         chili_key = chili.put()
 
         # Chipotle Lactose Intolerant foodItems
-        carnitas = FoodItem(name="Carnitas", restaurant="Chipotle", dietaryRest=["Lactose Intolerant"],picture="https://www.chipotle.com/content/dam/chipotle/global-site-design/en/menu/menu-items/in-store/menu-items/carnitas/primary/carnitas.png",
+        carnitas = FoodItem(name="Carnitas", dietaryRest=["Lactose Intolerant"],picture="https://www.chipotle.com/content/dam/chipotle/global-site-design/en/menu/menu-items/in-store/menu-items/carnitas/primary/carnitas.png",
         ingredients="Bay leaf, black pepper, juniper berries, pork, salt, sunflower oil, thyme",
         nutrition="Cal=210, Total Fat=12g, Sodium=450mg, Total Carb=0g, Protein=8.5g, Sugar=0g")
 
         carnitas_key = carnitas.put()
 
-        guacamole = FoodItem(name="Guacamole", restaurant="Chipotle", dietaryRest=["Lactose Intolerant"], picture="https://www.chipotle.com/content/dam/chipotle/global-site-design/en/menu/menu-items/in-store/menu-items/guacamole/primary/guacamole@3x.png",
+        guacamole = FoodItem(name="Guacamole", dietaryRest=["Lactose Intolerant"], picture="https://www.chipotle.com/content/dam/chipotle/global-site-design/en/menu/menu-items/in-store/menu-items/guacamole/primary/guacamole@3x.png",
         ingredients="Avocado, cilantro, jalapeno, lemon juice, lime juice, red onion, salt",
         nutrition="Cal=230, Total Fat=22g, Sodium=375mg, Total Carb=8g, Protein=2g, Sugar=1g")
 
         guacamole_key = guacamole.put()
 
-        barbacoa = FoodItem(name="Barbacoa", restaurant="Chipotle", dietaryRest=["Lactose Intolerant"], picture="https://www.chipotle.com/content/dam/chipotle/global-site-design/en/menu/menu-items/in-store/menu-items/barbacoa/Primary/barbacoa.png",
+        barbacoa = FoodItem(name="Barbacoa", dietaryRest=["Lactose Intolerant"], picture="https://www.chipotle.com/content/dam/chipotle/global-site-design/en/menu/menu-items/in-store/menu-items/barbacoa/Primary/barbacoa.png",
         ingredients="Bay leaf, beef, black pepper, chipotle chili, cloves, cumin, garlic, oregano, rice bran oil, salt, water",
         nutrition="Cal=170, Total Fat=7g, Sodium=530mg, Total Carb=2g, Protein=24g, Sugar=0g")
 
         barbacoa_key = barbacoa.put()
 
         # Chipotle Vegetarian foodItems
-        blackbeans = FoodItem(name="Black Beans", restaurant="Chipotle", dietaryRest=["Vegetarian"], picture="https://www.chipotle.com/content/dam/chipotle/global-site-design/en/menu/menu-items/in-store/menu-items/black-beans/primary/black-beans.png",
+        blackbeans = FoodItem(name="Black Beans", dietaryRest=["Vegetarian"], picture="https://www.chipotle.com/content/dam/chipotle/global-site-design/en/menu/menu-items/in-store/menu-items/black-beans/primary/black-beans.png",
         ingredients="Bay leaf, black beans, black pepper, chipotle chili, cumin, garlic, lemon juice, lime juice, oregano, rice bran oil, salt, water, yellow onion",
         nutrition="Cal=130, Total Fat=1.5g, Sodium=260mg, Total Carb=22g, Protein=7g, Sugar=2g")
 
         blackbeans_key = blackbeans.put()
 
-        pintobeans = FoodItem(name="Pinto Beans", restaurant="Chipotle", dietaryRest=["Vegetarian"], picture="https://www.chipotle.com/content/dam/chipotle/global-site-design/en/menu/menu-items/in-store/menu-items/pinto-beans/primary/pinto-beans.png",
+        pintobeans = FoodItem(name="Pinto Beans", dietaryRest=["Vegetarian"], picture="https://www.chipotle.com/content/dam/chipotle/global-site-design/en/menu/menu-items/in-store/menu-items/pinto-beans/primary/pinto-beans.png",
         ingredients="Bay leaf, black pepper, chipotle chili, cumin, garlic, lemon juice, lime juice, oregano, pinto beans, rice bran oil, salt, water, yellow onion",
         nutrition="Cal=130, Total Fat=1.5g, Sodium=300mg, Total Carb=21g, Protein=6g, Sugar=1g")
 
         pintobeans_key = pintobeans.put()
 
-        queso = FoodItem(name="Queso", restaurant="Chipotle", dietaryRest=["Vegetarian"],picture="https://www.chipotle.com/content/dam/chipotle/global-site-design/en/menu/menu-items/in-store/menu-items/queso/primary/queso@3x.png",
+        queso = FoodItem(name="Queso", dietaryRest=["Vegetarian"],picture="https://www.chipotle.com/content/dam/chipotle/global-site-design/en/menu/menu-items/in-store/menu-items/queso/primary/queso@3x.png",
         ingredients="Bell pepper, black pepper, cheddar cheese, cheese cultures, chipotle chili, cornstarch, cumin, distilled vinegar, garlic, jalapeno, lemon juice, lime juice, milk, oregano, poblano pepper, red wine vinegar, salt, rice bran oil, tapioca starch, tomatillo, tomato, tomato paste, vegetable rennet, water, yellow onion",
         nutrition="Cal=120, Total Fat=8g, Sodium=200mg, Total Carb=4g, Protein=6g, Sugar=1g")
 
         queso_key = queso.put()
 
         # Chipotle Lactose intolerant foodItems
-        sofritas = FoodItem(name="Sofritas", restaurant="Chipotle", dietaryRest=["Vegan"], picture="https://www.chipotle.com/content/dam/chipotle/global-site-design/en/menu/menu-items/in-store/menu-items/sofritas/primary/sofritas.png",
+        sofritas = FoodItem(name="Sofritas", dietaryRest=["Vegan"], picture="https://www.chipotle.com/content/dam/chipotle/global-site-design/en/menu/menu-items/in-store/menu-items/sofritas/primary/sofritas.png",
         ingredients="Bell pepper, black pepper, chipotle chili, cumin, garlic, gypsum, oregano, poblano pepper, red wine vinegar, rice bran oil, salt, soy beans, tomatoes, tomato paste, water, yellow onion",
         nutrition="Cal=150, Total Fat=10g, Sodium=555mg, Total Carb=9g, Protein=8g, Sugar=5g")
 
         sofritas_key = sofritas.put()
 
-        fajita = FoodItem(name="Fajita Vegetables", restaurant="Chipotle", dietaryRest=["Vegan"], picture="https://www.chipotle.com/content/dam/chipotle/global-site-design/en/menu/menu-items/in-store/menu-items/fajita-vegetables/primary/fajita_veg.png",
+        fajita = FoodItem(name="Fajita Vegetables", dietaryRest=["Vegan"], picture="https://www.chipotle.com/content/dam/chipotle/global-site-design/en/menu/menu-items/in-store/menu-items/fajita-vegetables/primary/fajita_veg.png",
         ingredients="Bell pepper, oregano, red onion, salt, sunflower oil",
         nutrition="Cal=20, Total Fat=0.5g, Sodium=170mg, Total Carb=5g, Protein=1g, Sugar=2g")
 
         fajita_key = fajita.put()
 
-        rice = FoodItem(name="Ciltantro-Lime Brown Rice", restaurant="Chipotle", dietaryRest=["Vegan"], picture="https://www.chipotle.com/content/dam/chipotle/global-site-design/en/menu/menu-items/in-store/menu-items/brown-rice/primary/brown-rice@3x.png",
+        rice = FoodItem(name="Ciltantro-Lime Brown Rice", dietaryRest=["Vegan"], picture="https://www.chipotle.com/content/dam/chipotle/global-site-design/en/menu/menu-items/in-store/menu-items/brown-rice/primary/brown-rice@3x.png",
         ingredients="Bay leaf, brown rice, cilantro, lemon juice, lime juice, rice bran oil, salt, water",
         nutrition="Cal=210, Total Fat=6g, Sodium=195mg, Total Carb=36g, Protein=4g, Sugar=0g")
 
