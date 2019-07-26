@@ -15,4 +15,6 @@ class FoodItem(ndb.Model):
 class Restaurant(ndb.Model):
     name = ndb.StringProperty(required=True)
     picture = ndb.StringProperty(required=False)
-    foodItems = ndb.KeyProperty(FoodItem, repeated=True)
+    veganItems = ndb.KeyProperty(FoodItem, repeated=True)
+    vegetarianItems = ndb.KeyProperty(FoodItem, repeated=True)
+    lactoseItems = ndb.KeyProperty(FoodItem, repeated=True)
