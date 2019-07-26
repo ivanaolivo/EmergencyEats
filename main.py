@@ -17,6 +17,7 @@ restaurant_dict = {
     'Rest1': 'Panera',
     'Rest2': 'McDonalds',
     'Rest3': 'Chipotle',
+    'Rest4': 'ChickFilA',
 }
 
 class RestaurantHandler(webapp2.RequestHandler):
@@ -201,7 +202,63 @@ class SeedDataHandler(webapp2.RequestHandler):
         ingredients="Bay leaf, brown rice, cilantro, lemon juice, lime juice, rice bran oil, salt, water",
         nutrition="Cal=210, Total Fat=6g, Sodium=195mg, Total Carb=36g, Protein=4g, Sugar=0g")
 
-        rice_key = rice.put()
+        #ChickFilA Vegan
+
+        salad4 = FoodItem(name="Grilled market salad (no chicken, no cheese)", dietaryRest=["Vegan"], picture="https://www.cfacdn.com/img/order/menu/Online/Salads%26wraps/marketSalad_noMeat_PDP.png",
+        ingredients="Romaine lettuce, red and green apples (fresh apples, calcium ascorbate [a blend of calcium and vitamin C to maintain freshness and color]), strawberries, Granola (toasted oats [whole rolled oats",
+        nutrition="210 cals, 11g fat, 24g carbs, 7g protein, 170mg sodium")
+
+        salad4_key = salad4.put()
+
+        superFood = FoodItem(name="Superfood side", dietaryRest=["Vegan"], picture="https://www.cfacdn.com/img/order/COM/Menu_Refresh/Sides/Sides%20PDP/_0000s_0011_%5BFeed%5D_0003s_0001_Sides_Superfood-Side-Salad.png",
+        ingredients="Broccoli, kale, maple vinaigrette dressing (maple syrup, soybean oil, water, brown sugar, onion ([including dehydrated], distilled vinegar, apple cider vinegar, soy sauce [water, soybeans, salt, alcohol], balsamic vinegar, salt",
+        nutrition="140 cals, 8g fat, 16g carbs, 160mg sodium")
+
+        superFood_key = superFood.put()
+
+        hashbrowns = FoodItem(name="Hashbrowns", dietaryRest=["Vegan"], picture="https://www.cfacdn.com/img/order/COM/Menu_Refresh/Breakfast/Breakfast%20PDP/_0000s_0009_%5BFeed%5D_0000s_0028_Breakfast_Hashbrowns_2.png",
+        ingredients="Potatoes (vegetable oil [canola oil, palm oil], dehydrated potato, salt, disodium dihydrogen pyrophosphate [to promote color retention], dextrose, high oleic canola oil with Dimethylpolysiloxane added as an anti-foaming agent))",
+        nutrition="250 cals, 17g fat, 23g carbs, 3g protein, 380mg sodium")
+
+        hashbrowns_key = hashbrowns.put()
+
+        # Chick fil a Vegetarian
+        salad5 = FoodItem(name="Spicy Southwest salad (no chicken)", dietaryRest=["Vegetarian"], picture="https://www.cfacdn.com/img/order/menu/Online/Salads%26wraps/sswSalad_noMeat_pdp.png",
+        ingredients="Romaine lettuce, water, seasoning [maltodextrin, spice and herb, modified food starch, tapioca maltodextrin, salt, cottonseed oil, spice and color {contains paprika}, garlic powder, natural flavoring, soy lecithin], modified food starch, salt, monosodium glutamate, sugar, spices, paprika), grape tomato, roasted corn, black beans",
+        nutrition="350 cals, 17g fat, 37g carbs, 14g protein, 1060mg sodium")
+
+        salad5_key = salad5.put()
+
+        biscuit = FoodItem(name="Buttered biscuit", dietaryRest=["Vegetarian"], picture="https://www.cfacdn.com/img/order/COM/Menu_Refresh/Breakfast/Breakfast%20PDP/_0000s_0018_%5BFeed%5D_0000s_0020_Breakfast_Biscuit.png",
+        ingredients="Biscuit (enriched bleached wheat flour [niacin, reduced iron, thiamine mononitrate, riboflavin, folic acid], vegetable oil shortening [palm and/or palm kernel oils], sugar",
+        nutrition="310 cals, 14g fat, 42g carbs, 4g protein, 720mg sodium")
+
+        biscuit_key = biscuit.put()
+
+        parfait2 = FoodItem(name="Greek yogurt parfait", dietaryRest=["Vegetarian"], picture="https://www.cfacdn.com/img/order/COM/PDP/Breakfast/PDP%20Greek%20Yogurt%20Parfait%20Granola.png",
+        ingredients="strained yogurt strained yogurt: cultured pasteurized whole organic milk, water, organic cane sugar, natural flavors, organic locust bean gum, pectin, organic vanilla beans., Strawberries, Granola (toasted oats [whole rolled oats, soybean oil, honey], soybean oil, sugar, honey",
+        nutrition="270 cals, 9g fat, 34g carbs, 13g protein, 85mg sodium")
+
+        parfait2_key = parfait2.put()
+
+        # Chick fil a Lactose Intolerant
+        nuggets2 = FoodItem(name="8 count grilled nuggets", dietaryRest=["Lactose Intolerant"], picture="https://www.cfacdn.com/img/order/menu/Online/Entrees/grilledNuggets_8ct_PDP.png",
+        ingredients="Chicken (boneless skinless chicken breast, water, seasoning [yeast extract, onion powder, sea salt, garlic powder, sugar, salt, corn maltodextrin, gum arabic, natural flavor, lemon juice concentrate, vinegar solids]",
+        nutrition="110 cals, 2.5g fat, 1g carbs, 21g protein, 410mg sodium")
+
+        nuggets2_key = nuggets2.put()
+
+        muffin = FoodItem(name="Multigrain English Muffin", dietaryRest=["Lactose Intolerant"], picture="https://www.cfacdn.com/img/order/menu/Online/Breakfast/EMuffin_PDP.png",
+        ingredients="Multigrain English muffin (enriched flour [wheat flour, malted barley flour, niacin, reduced Iron, thiamin mononitrate, riboflavin, folic acid], water, whole wheat flour, yeast, grain and seed blend [oats, rye flour, rye meal, flax seed, millet, wheat flakes], degerminated yellow corn meal, degerminated yellow corn flour",
+        nutrition="150 cals, 1g fat, 30g carbs, 4g protein")
+
+        muffin_key = muffin.put()
+
+        sandwich = FoodItem(name="Grilled Chicken Sandwich", dietaryRest=["Lactose Intolerant"], picture="https://www.cfacdn.com/img/order/COM/Menu_Refresh/Entree/Entree%20PDP/_0000s_0009_Final__0026_CFA_PDP_Grilled-Deluxe-Sandwich_1085.png",
+        ingredients="Chicken (boneless skinless chicken breast, water, seasoning [yeast extract, onion powder, sea salt, garlic powder, sugar, salt, corn maltodextrin, gum arabic, natural flavor, lemon juice concentrate, vinegar solids], chicken flavor [chicken breast meat, chicken stock, salt, maltodextrin], modified corn starch)",
+        nutrition="330 cals, 6g fat, 41g carbs, 29g protein, 710mg sodium")
+
+        sandwich_key = sandwich.put()
 
         # Restaurant initialization
         mcdonalds = Restaurant(name="McDonalds", picture="https://vignette.wikia.nocookie.net/ronaldmcdonald/images/b/b5/Mcdonalds-logo-current-1024x750.png/revision/latest/scale-to-width-down/180?cb=20180730081148",
@@ -216,6 +273,10 @@ class SeedDataHandler(webapp2.RequestHandler):
                             vegetarianItems=[ciabatta_key, soup_key, salad2_key], lactoseItems=[salad3_key, blt_key, chili_key])
         panera.put()
         self.response.write("data has been seeded")
+
+        chickfila = Restaurant(name="chickfila", picture="https://s3-media4.fl.yelpcdn.com/bphoto/E7oOqJWxZ9Z3gNhD97KQXw/o.jpg",
+                               veganItems=[hashbrowns_key, salad4_key, superFruit_key], vegetarianItems=[salad5_key, biscuit_key, parfait2_key], lactoseItems=[nuggets2_key, muffin_key, sandwich_key])
+        chickfila.put()
 
 class AboutUsHandler(webapp2.RequestHandler):
     def get(self):
