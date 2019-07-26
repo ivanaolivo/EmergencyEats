@@ -50,10 +50,10 @@ h1, h2, h3 {
 .item {
   display:flex;
   height: 300px;
-  width: 200px;
+  align-items: center;
 }
 
 .imageitem {
   height: 300px;
-  width: 300px;
+  width: 400px;
 }
