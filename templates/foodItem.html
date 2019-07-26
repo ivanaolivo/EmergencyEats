@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<head>
+  <title>{{ foodItem.name }}-Nutrition</title>
+  <link rel="stylesheet" href="../static/foodItem.css"/>
+</head>
+<body>
+  {% include 'templates/navbar.html' %}
+  <h1>{{ foodItem.name }} Nutrition Facts</h1>
+  <img src="{{ foodItem.picture }}"/>
+  <h3>{{ foodItem.ingredients }}</h3>
+  <h2>Nutrition Facts</h2>
+  <h3>{{ foodItem.nutrition }}</h3>
+</body>

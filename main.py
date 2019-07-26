@@ -25,10 +25,11 @@ class RestaurantHandler(webapp2.RequestHandler):
         restaurant_template = the_jinja_env.get_template('templates/restaurants.html')
         self.response.write(restaurant_template.render(restaurant_dict))
 
-class PaneraChooseHandler(webapp2.RequestHandler):
+class RestaurantHomeHandler(webapp2.RequestHandler):
     def get(self):
-        paneraChoose_template = the_jinja_env.get_template('templates/paneraChoose.html')
-        self.response.write(paneraChoose_template.render())
+        RestaurantHome_template = the_jinja_env.get_template('templates/restaurantHome.html')
+        restaurant_name = self.request.get("restaurant")
+        self.response.write(RestaurantHome_template.render({"restaurant_name":restaurant_name}))
 
 class SeedDataHandler(webapp2.RequestHandler):
     def get(self):
@@ -216,10 +217,45 @@ class SeedDataHandler(webapp2.RequestHandler):
         panera.put()
         self.response.write("data has been seeded")
 
+class AboutUsHandler(webapp2.RequestHandler):
+    def get(self):
+        AboutUsHandler_template = the_jinja_env.get_template('templates/aboutus.html')
+        self.response.write(AboutUsHandler_template.render())
+
+class FoodListHandler(webapp2.RequestHandler):
+    def get(self):
+        RestaurantHome_template = the_jinja_env.get_template('templates/foodList.html')
+        restaurant_name = self.request.get("restaurant")
+        restriction_name = self.request.get("restriction")
+        restaurant_entity = Restaurant.query(Restaurant.name==restaurant_name).get()
+        print restaurant_entity
+        foodItems = []
+        if restriction_name == "vegan":
+            foodItems = restaurant_entity.veganItems
+        elif restriction_name == "vegetarian":
+            foodItems = restaurant_entity.vegetarianItems
+        elif restriction_name == "lactose_intolerant":
+            foodItems = restaurant_entity.lactoseItems
+        print foodItems
+        self.response.write(RestaurantHome_template.render(
+            {"restaurant_name":restaurant_name, "restriction": restriction_name, "foodItems": foodItems}))
+
+class FoodItemHandler(webapp2.RequestHandler):
+    def get(self):
+        FoodItem_template = the_jinja_env.get_template('templates/foodItem.html')
+        foodId = self.request.get("foodid")
+        foodItem_entity = FoodItem.get_by_id(int(foodId))
+        print foodItem_entity
+        self.response.write(FoodItem_template.render(
+           {'foodItem': foodItem_entity}
+        ))
 
 app = webapp2.WSGIApplication([
     ('/', LoginHandler),
     ('/restaurants', RestaurantHandler),
-    ('/seed-data', SeedDataHandler),
-    ('/paneraChoose', PaneraChooseHandler),
+    ('/seeddata', SeedDataHandler),
+    ('/restaurantHome', RestaurantHomeHandler),
+    ('/aboutus', AboutUsHandler),
+    ('/foodList', FoodListHandler),
+    ('/foodItem', FoodItemHandler),
 ], debug=True)
