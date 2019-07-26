@@ -7,8 +7,10 @@ class User(ndb.Model):
 
 class FoodItem(ndb.Model):
     name = ndb.StringProperty(required=True)
-    restaurant = ndb.StringProperty(required=True)
     dietaryRest = ndb.StringProperty(repeated=True)
+    picture = ndb.StringProperty(required=True)
+    ingredients = ndb.StringProperty(required=True)
+    nutrition = ndb.StringProperty(required=True)
 
 class Restaurant(ndb.Model):
     name = ndb.StringProperty(required=True)
