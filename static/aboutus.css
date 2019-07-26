@@ -72,6 +72,8 @@ h4
   font-family: serif;
   text-align: center;
   color:#4d0e13;
+  font-size: 26px;
+
 }
 
 .column {
@@ -94,4 +96,22 @@ h4
   -webkit-column-rule: 4px double #ff00ff; /* Chrome, Safari, Opera */
   -moz-column-rule: 4px double #ff00ff; /* Firefox */
   column-rule: 4px double #ff00ff;
+}
+
+.baby1
+{
+  width: 500px;
+  height: 500px;
+}
+
+.baby2
+{
+  width: 500px;
+  height: 500px;
+}
+
+.baby3
+{
+  width: 500px;
+  height: 500px;
 }
