@@ -10,7 +10,7 @@
   <h3>Click food name to see nutrition facts</h3>
   {% for foodItem_key in foodItems %}
     <div class= "item">
-      <img src="{{ foodItem_key.get().picture }}"/>
+      <img class= "imageitem"src="{{ foodItem_key.get().picture }}"/>
       <h2><li><a href="/foodItem?foodid={{ foodItem_key.id() }}">{{ foodItem_key.get().name }}</a></h2>
     </div>
   {% endfor %}
