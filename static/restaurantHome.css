@@ -55,80 +55,24 @@ li:last-child {
 }
 
 .container {
-  float: center;
   position: relative;
-  width: 100%;
   height: 500px;
-  background-color: green;
-  background-image: url("https://www.ecestaticos.com/imagestatic/clipping/f7e/0c2/f7e0c25ecc9a33f3b7955626a56124ae/imagen-sin-titulo.jpg?mtime=1561550045");
   background-size: cover;
 }
 
-.container .btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: rgba(194,46,33,.9);
-  color: #4d0e13;
-  font-family: serif;
-  font-size: 50px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  height: 200px;
-  width: 400px;
-}
-
-.container .btn:hover {
-  background-color: #e6dcdd;
+.container1 {
+  background-image: url("https://www.ecestaticos.com/imagestatic/clipping/f7e/0c2/f7e0c25ecc9a33f3b7955626a56124ae/imagen-sin-titulo.jpg?mtime=1561550045");
 }
 
 .container2 {
-  float: center;
-  position: relative;
-  width: 100%;
-  height: 500px;
-  background-color: green;
   background-image: url("https://vegetarian-nation.com/wp-content/uploads/2018/04/vegetarian-diet-heart-health-AS178373384.jpeg");
-  background-size: cover;
-}
-
-.container2 .btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: rgba(194,46,33,.9);
-  color: #4d0e13;
-  font-family: serif;
-  font-size: 50px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  height: 200px;
-  width: 400px;
-}
-
-.container2 .btn:hover {
-  background-color: #e6dcdd;
 }
 
 .container3 {
-  float: center;
-  position: relative;
-  width: 100%;
-  height: 500px;
   background-image: url("https://allaboutkiids.com/wp-content/uploads/2018/03/Lactose-intolerance-coastal-urgent-care-louisiana.jpg");
-  background-size: cover;
-  background-position: center;
 }
 
-.container3 .btn {
+.container a {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -138,14 +82,14 @@ li:last-child {
   color: #4d0e13;
   font-family: serif;
   font-size: 50px;
-  padding: 12px 24px;
+  padding: 70px 24px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  height: 200px;
   width: 400px;
+  text-decoration: none;
 }
 
-.container3 .btn:hover{
+.container a:hover {
   background-color: #e6dcdd;
 }

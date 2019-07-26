@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ restaurant_name }} Options</title>
+  <link rel="stylesheet" href="../static/restaurantHome.css"/>
+</head>
+<body>
+  {% include 'templates/navbar.html' %}
+  <h1>Click your dietary restriction</h1>
+  <div class="container container1">
+      <a href="/foodList?restaurant={{ restaurant_name }}&restriction=vegan">
+        <b>VEGAN</b>
+      </a>
+  </div>
+<br>
+  <div class="container2 container">
+    <a href="/foodList?restaurant={{ restaurant_name }}&restriction=vegetarian">
+      <b>VEGETARIAN</b>
+    </a>
+  </div>
+<br>
+  <div class="container3 container">
+    <a href="/foodList?restaurant={{ restaurant_name }}&restriction=lactose_intolerant">
+      <b>LACTOSE INTOLERANT</b>
+    </a>
+  </div>
+<br>
+
+</body>
+</html>
