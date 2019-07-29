@@ -81,7 +81,6 @@ class SeedDataHandler(webapp2.RequestHandler):
         mcchicken = FoodItem(name="McChicken", dietaryRest=["Lactose Intolerant"], picture="https://www.mcdonalds.com/content/dam/usa/nfl/nutrition/items/regular/desktop/t-mcdonalds-McChicken.jpg",
                             ingredients="McChicken patty(Boneless Chicken, Bleached Wheat Flour, Water, Vegetable Oil (Canola Oil, Corn Oil, Soybean Oil, Hydrogenated Soybean Oil), Wheat Flour, Modified Corn Starch, Sea Salt, Spice, Potassium Chloride, Salt, Paprika, Dextrose, Sodium Phosphates, Leavening (Ammonium Bicarbonate, Sodium Acid Pyrophosphate, Baking Soda, Monocalcium Phosphate), Wheat Gluten, Natural Flavors with Extractives of Paprika, Yeast, Corn Starch, Garlic Powder), Regular Bun(Enriched Flour (Wheat Flour, Malted Barley Flour, Niacin, Iron, Thiamine Mononitrate, Riboflavin, Folic Acid), Water, Sugar, Yeast, Soybean Oil, Contains 2% or Less: Salt, Wheat Gluten, Potato Flour, May Contain One or More Dough Conditioners (DATEM, Ascorbic Acid, Mono and Diglycerides, Enzymes), Vinegar), Shredded lettuce, Mayonnaise(Soybean Oil, Egg Yolk, Water, Distilled Vinegar, Salt, Sugar, Spice, Lemon Juice Concentrate)",
                             nutrition="410cal, 39g carbs, 22g fat, 15g protein, 590mg sodium")
-
         mcchicken_key = mcchicken.put()
 
         nuggets = FoodItem(name="10 piece Chicken McNuggets", dietaryRest=["Lactose Intolerant"], picture="https://i2.wp.com/www.eatthis.com/wp-content/uploads/2019/02/mcdonalds-chicken-nuggets.jpg?fit=500%2C366&ssl=1",
@@ -262,6 +261,116 @@ class SeedDataHandler(webapp2.RequestHandler):
 
         sandwich_key = sandwich.put()
 
+        # Starbucks vegan
+        lentils = FoodItem(name="Lentils & Vegetable Protein Bowl With Brown Rice", dietaryRest=["Vegan"], picture="https://globalassets.starbucks.com/assets/af957809c11b4e099c2962c708964cb3.jpg",
+        ingredients="Cooked brown rice (water, brown rice, olive oil [refined olive oil, extra-virgin olive oil]), black lentils (water, black lentils), lemon tahini dressing (water, sesame seeds, extra virgin olive oil, lemon juice concentrate, reduced sodium tamari soy sauce [water, soybeans, salt], parsley, agave syrup, toasted sesame oil, cilantro, salt, garlic, paprika, natural flavor), kale, broccoli, butternut squash (squash, olive oil [refined olive oil, extra-virgin olive oil]), beets, cabbage, peas, roasted tomato (tomatoes, canola oil, garlic, vinegar, salt, spices), roasted sunflower seeds (roasted sunflower seeds, [sunflower, canola or cottonseed oil], salt), roasted red bell pepper, green onion",
+        nutrition="650 cals, 29g fat, 80g carbs, 23g protein, 670 mg sodium")
+
+        lentils_key = lentils.put()
+
+        oatmeal = FoodItem(name="Hearty Blueberry Oatmeal", dietaryRest=["Vegan"], picture="https://globalassets.starbucks.com/assets/85381ce3578f4ba094eb4ffc50c6bf60.jpg",
+        ingredients="Hearty Blueberry Oatmeal [Water, Whole Grain Oatmeal(Whole Grain Rolled Oats, Whole Grain Steel Cut Oats, Whole Grain Oat Flour, Salt, Calcium Carbonate, Guar Gum), Fruit, Nut And Seed Medley (Dried Figs (Figs, Rice Flour), Pepitas, Dried Cranberries (Cranberries, Sugar, Sunflower Oil), Almonds), Blueberries, Organic Agave Nectar Syrup",
+        nutrition="220 cals, 2.5g fat, 5g protein, 43g protein, 125mg sodium")
+
+        oatmeal_key = oatmeal.put()
+
+        cookies = FoodItem(name="Emmys Organic Coconut Cookies", dietaryRest=["Vegan"], picture="https://cdn.shopify.com/s/files/1/0147/8712/products/emmys-dark-cacao-cookie-pack_1024x1024.png?v=1560448688",
+        ingredients="Organic Coconut, Organic Agave Syrup, Organic Fair-Trade Cocoa Powder, Organic Almond Flour, Organic Coconut Oil, Organic Vanilla Extract, Himalayan Salt",
+        nutrition="100 cals, 8g fat, 8g carbs, 1g protein, 5mg sodium")
+
+        cookies_key = cookies.put()
+
+        # Starbucks Vegetarian
+        sandwich2 = FoodItem(name="Egg and Cheddar Breakfast Sandwich", dietaryRest=["Vegetarian"], picture="https://media1.s-nbcnews.com/j/newscms/2017_13/1204463/starbucks-egg-cheddar-breakfast-sandwich-today-170330-tease_649e357ca9a1a65653c34b8282c2578a.fit-560w.jpg",
+        ingredients="Wheat english muffin (water, organic whole wheat flour, organic enriched flour [wheat flour, niacin, reduced iron, riboflavin, thiamine mononitrate, folic acid], yeast, organic corn flour, organic dried cane syrup, organic wheat gluten, organic vinegar, sea salt, organic extra virgin olive oil, ascorbic acid, enzymes), fried egg patty (egg whites, egg yolks, milk, food starch-modified, salt, citric acid), mild cheddar cheese (cultured pasteurized milk, salt, enzymes, annatto color), butter spread (pasteurized cream [derived from milk], canola oil, vitamin a palmitate, beta carotene)",
+        nutrition="280 cals, 13g fat,  27g carbs,  14g protein, 460mg sodium")
+
+        sandwich2_key = sandwich2.put()
+
+        sandwich3 = FoodItem(name="Spinach, Feta and Egg White Sandwich", dietaryRest=["Vegetarian"], picture="https://media1.s-nbcnews.com/j/newscms/2017_13/1204464/starbucks-spinach-feta-breakfast-wrap-today-170330-tease_054b795d92014fa09890ab2660314327.fit-560w.jpg",
+        ingredients="Wrap (water, whole wheat flour, enriched wheat flour [wheat flour, malted barley flour, niacin, reduced iron, thiamin mononitrate, riboflavin, folic acid], wrap base [wheat gluten, corn starch, oat fiber, soy protein isolate, soybean oil, defatted soy flour, sesame flour, 2% or less of: whole wheat flour, dextrose], wheat gluten, canola oil, sugar, mold inhibitor [cultured wheat flour, vinegar], honey, salt, yeast, ascorbic acid, enzymes), egg white omelet (cage-free egg whites, whey powder, corn starch, nonfat dry milk, salt, xanthan gum, guar gum, liquid pepper extract), spinach, feta cheese (pastuerized milk, salt, cheese culture, enzymes, potato starch), sun dried tomato cream cheese spread",
+        nutrition="280 cals, 8g fat,  34g carbs,  20g protein, 830mg sodium")
+
+        sandwich3_key = sandwich3.put()
+
+        bowl2 = FoodItem(name="Hearty Veggie and Brown Rice Salad Bowl", dietaryRest=["Vegetarian"], picture="https://media2.s-nbcnews.com/j/newscms/2017_13/1204476/starbucks-hearty-veggie-bowl-today-170330-tease_67a66bb6d587ef99685a93e49c8337b3.fit-560w.jpg",
+        ingredients="Cooked brown rice (water, brown rice, olive oil [refined olive oil, extra virgin olive oil]), lemon tahini dressing (water, sesame seed, extra virgin olive oil, lemon juice concentrate, honey, parsley, reduced sodium tamari soy sauce [water, soybeans, salt], spice, toasted sesame oil (vegetable oil), salt, garlic, natural flavors), broccoli, butternut squash (butternut squash, olive oil [refined olive oil, extra virgin olive oil]), peas, kale, red beets, cabbage, roasted tomatoes (tomatoes, canola oil, garlic, vinegar, salt, herbs)",
+        nutrition="430 cals, 22g fat,  50g carbs,  10g protein, 640mg sodium")
+
+        bowl2_key = bowl2.put()
+
+        # Starbucks Lactose intolerant
+        bagel = FoodItem(name="Cinnamon Raisin Bagel", dietaryRest=["Lactose Intolerant"], picture="https://globalassets.starbucks.com/assets/2bb03cf9642040daa2b2ff4afc848f8e.jpg",
+        ingredients="Unbleached enriched flour (wheat flour, malted barley flour, niacin, reduced iron, thiamine mononitrate, riboflavin, folic acid), water, raisins, sugar, contains 2% or less of: wheat gluten, salt, yeast, cinnamon, vinegar, guar gum, sunflower oil, ascorbic acid, enzymes, monoglycerides",
+        nutrition="270 cals, 1g fat,  58g carbs,  8g protein, 370mg sodium")
+
+        bagel_key = bagel.put()
+
+        mocha = FoodItem(name="Soy Mocha with no Whipped Cream (Grande)", dietaryRest=["Lactose Intolerant"], picture="https://globalassets.starbucks.com/assets/7e2d6987b7404f13ab8eae0b2712dde9.jpg",
+        ingredients="Organic Vanilla Soymilk [Organic Soymilk (Filtered Water, Whole Organic Soybeans), Organic Evaporated Cane Juice, Calcium Carbonate, Natural Vanilla Flavor, Sea Salt, Carrageenan, Sodium Citrate, Baking Soda, Vitamin A Palmitate, Vitamin D2, Riboflavin (B2), Vitamin B12], Brewed Espresso, Mocha Sauce [Water, Sugar, Cocoa Processed With Alkali, Natural Flavor]",
+        nutrition="280 cals, 7g fat,  46g carbs,  11g protein, 110mg sodium")
+
+        mocha_key = mocha.put()
+
+        wrap = FoodItem(name="Seared Steak, Egg & Tomatillo Wrap", dietaryRest=["Lactose Intolerant"], picture="https://globalassets.starbucks.com/assets/00dbc4c9600d482387da9a19b3582f47.jpg",
+        ingredients="homestyle tortilla (enriched unbleached wheat flour (wheat flour, enzyme (added for improved baking), niacin, reduced iron, thiamne mononitrate, riboflavin, folic acid), water, palm oil, expeller pressed canola oil, leavening (wheat starch, sodium acid pyrophosphate, sodium bicarbonate, monocalcium phosphate), cane sugar, salt, yeast, sodium bicarbonate); precooked scrambled eggs (whole eggs, water, soybean oil, modified food starch, salt, xanthan gum, guar gum, citric acid)", nutrition="410 cals, 18g fat,  43g carbs,  21g protein, 780mg sodium")
+
+        wrap_key = wrap.put()
+
+        # Wendy's Vegan
+        potato = FoodItem(name="Sour Cream and Chive Baked Potato", dietaryRest=["Vegan"], picture="https://images.eatthismuch.com/site_media/img/607672_dillonc118_ab312029-ff9d-4673-8987-3b59dd881ec7.jpg",
+        ingredients="Freeze dried chives, potatoes", nutrition="340 cals, 6g fat, 65 mg sodium, 4g sugar, 64g carbs, 9g protein")
+
+        potato_key = potato.put()
+
+        salad6 = FoodItem(name="Garden Side Salad(no cheese)", dietaryRest=["Vegan"], picture="https://image.zmenu.com/large/3250/20140409145232118185.png",
+        ingredients="Iceberg Lettuce, Tomatoes, Romaine Lettuce, Salt, Enzymes, Annatto (Vegetable Color)], Anti-Caking Blend [Potato Starch, Powdered Cellulose, Corn Starch, Calcium Sulfate], Natamycin [A Natural Mold Inhibitor]. Soybean Oil, Water, Sunflower Oil And/Or Canola Oil, Yeast, Natural Butter Flavor, Malted Barley Flour, Citric Acid And/Or Tocopherols (To Maintain Freshness)",
+        nutrition="260 cals, 18g fat, 7g protein, 19g carbs, 450 mg sodium, 4g sugar")
+
+        salad6_key = salad6.put()
+
+        salad7 = FoodItem(name="Apple Pecan Chicken Salad(no chicken)", dietaryRest=["Vegan"], picture="http://wendysjamaica.com/wp-content/uploads/2017/08/Apple-chicken_correct.png",
+        ingredients="Pomegranate Vinaigrette Dressing: Water, Sugar, Pomegranate Juice Concentrate, Shallots, Xanthan Gum, Natural Flavor, Spice. Lecithin. Roasted Pecans: Pecans, Sugar, Honey, Corn Starch, Calcium Stearate (Anti-Caking Agent), Soy Lecithin, Maltodextrin, Xanthan Gum, Soybean Oil, Sea Salt, Cayenne Pepper.",
+        nutrition="570 cals, 24g fat, 39g protein, 52g carbs, 41g sugar, 1030mg sodium")
+
+        salad7_key = salad7.put()
+
+        # Wendys vegetarian
+        fries = FoodItem(name="French fries", dietaryRest=["Vegetarian"], picture=" https://www.seriouseats.com/images/20101201-wendysfries.jpg",
+        ingredients="Potatoes, Vegetable Oil (Contains One Or More Of The Following Oils: Canola, Soybean, Cottonseed, Sunflower, Corn), Dextrose, Sodium Acid Pyrophosphate (To Maintain Natural Color). Cooked In Vegetable Oil (Soybean Oil, Vegetable Oil [May Contain One Or More Of The Following: Canola, Corn, Or Cottonseed], Hydrogenated Soybean Oil, Dimethylpolysiloxane [Anti-Foaming Agent]. Salt: Sea Salt",
+        nutrition="320 cals, 15g fat, 5g protein, 320 mg sodium, 0g sugar, 42g carbs")
+
+        fries_key = fries.put()
+
+        apples = FoodItem(name="Apple Bites", dietaryRest=["Vegetarian"], picture="https://images.eatthismuch.com/site_media/img/172595_dillonc118_f1689b2c-899a-4b92-829b-22ae18af5ca6.jpg",
+        ingredients="Apples, Calcium Ascorbate", nutrition="35 cals, 0g protein, 0g fat, 8g carbs, 0mg sodium, 6g sugar")
+
+        apples_key = apples.put()
+
+        potato2 = FoodItem(name="Cheese Baked Potato", dietaryRest=["Vegetarian"], picture="http://wendysjamaica.com/wp-content/uploads/2017/08/Cheese-n-cheese2.png",
+        ingredients="Cheddar Cheese Sauce: Water, Cheddar Cheese (Pasteurized Milk, Salt, Cultures, Enzymes), Milk, Modified Corn Starch, Butter (Cream, Salt), Canola Oil, Natural Flavor, Salt, Sodium Citrate, Whey Protein Concentrate, Soy Lecithin. Potato : Potato.",
+        nutrition="450g cals, 15g protein, 14g fat, 65g carbs, 690mg sodium, 4g sugar")
+
+        potato2_key = potato2.put()
+
+        #Wendys Lactose intolerant
+        hamburger2 = FoodItem(name="Jr Hamburger", dietaryRest=["Lactose Intolerant"], picture="https://image.zmenu.com/large/3250/20140409145309900710.png",
+        ingredients="Sandwich Bun: Flour (Wheat Flour, Malted Barley Flour, Niacin, Reduced Iron, Thimain Mononitrate, Riboflavin, Folic Acid), Water, High Fructose Corn Syrup, Yeast, Soybean Oil, Ascorbic Acid, Datem, Mono- And Di-Glycerides (May Be Ethoxylated), Calcium Peroxide, Sodium Stearoyl, Jr. Hamburger Patty: Ground Beef, Salt.",
+        nutrition="240 cals, 14g protein, 10g fat, 25g carbs, 5g sugar, 470mg sodium")
+
+        hamburger2_key = hamburger2.put()
+
+        sandwich4 = FoodItem(name="Spicy Chicken Sandwich", dietaryRest=["Lactose Intolerant"], picture="http://wendysjamaica.com/wp-content/uploads/2017/05/119.png",
+        ingredients="Premium Bun: Enriched Flour (Wheat Flour, Malted Barley Flour, Niacin, Reduced Iron, Thiamine Mononitrate, Riboflavin, Folic Acid), Water, High Fructose Corn Syrup, Hydrogenated Soybean Oil, Dimethylpolysiloxane [Anti-Foaming Agent].",
+        nutrition="500 cals, 19g fat, 28g protein, 990mg sodium, 5g sodium, 51g carbs")
+
+        sandwich4_key = sandwich4.put()
+
+        potato3 = FoodItem(name="Plain baked potato", dietaryRest=["Lactose Intolerant"], picture="https://images.eatthismuch.com/site_media/img/172386_dillonc118_2a12d78c-0bd1-4788-9ecb-de6b1c62ee57.jpg",
+        ingredients="Potato", nutrition="270 cals, 7g protein, 0g fat, 61g carbs, 25mg sodium, 3g sugar")
+
+        potato3_key = potato3.put()
+
         # Restaurant initialization
         mcdonalds = Restaurant(name="McDonalds", picture="https://vignette.wikia.nocookie.net/ronaldmcdonald/images/b/b5/Mcdonalds-logo-current-1024x750.png/revision/latest/scale-to-width-down/180?cb=20180730081148",
                                veganItems=[mapleOatmeal_key, sideSalad_key, fruit_key], vegetarianItems=[fruitParfait_key, mcmuffin_key, mcwrap_key], lactoseItems=[hamburger_key, mcchicken_key, nuggets_key])
@@ -279,6 +388,17 @@ class SeedDataHandler(webapp2.RequestHandler):
         chickfila = Restaurant(name="Chickfila", picture="https://s3-media4.fl.yelpcdn.com/bphoto/E7oOqJWxZ9Z3gNhD97KQXw/o.jpg",
                                veganItems=[hashbrowns_key, salad4_key, superFood_key], vegetarianItems=[salad5_key, biscuit_key, parfait2_key], lactoseItems=[nuggets2_key, muffin_key, sandwich_key])
         chickfila.put()
+
+        starbucks = Restaurant(name="Starbucks", picture="https://www.stickpng.com/assets/images/58428cc1a6515b1e0ad75ab1.png",
+                               veganItems=[lentils_key, oatmeal_key, cookies_key], vegetarianItems=[sandwich2_key, sandwich3_key, bowl2_key], lactoseItems=[bagel_key, mocha_key, wrap_key])
+
+        starbucks.put()
+
+        wendys = Restaurant(name="Wendys", picture="http://pluspng.com/img-png/wendys-logo-png-die-besten-25-wendys-logo-ideen-auf-pinterest-lustig-disney-kunstreferenz-und-lebenstricks-webseiten-550.png",
+                            veganItems=[potato_key, salad6_key, salad7_key], vegetarianItems=[fries_key, apples_key, potato2_key], lactoseItems=[hamburger2_key, sandwich4_key, potato3_key])
+
+        wendys.put()
+
 
 class AboutUsHandler(webapp2.RequestHandler):
     def get(self):
